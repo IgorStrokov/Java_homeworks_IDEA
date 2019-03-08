@@ -55,7 +55,6 @@ public class Homework5_Task3 {
 
     static void printArray(int[] arr1, int[] arr2, int[] oddArr) {
         System.out.println("Your first array is:\n" + Arrays.toString(arr1) +
-                "\nYour second array is:\n" + Arrays.toString(arr2));
-        System.out.println("Odd array You've got:\n" + Arrays.toString(oddArr));
+                "\nYour second array is:\n" + Arrays.toString(arr2) + "\nOdd array You've got:\n" + Arrays.toString(oddArr));
     }
 }
