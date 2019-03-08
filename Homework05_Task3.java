@@ -25,7 +25,7 @@ public class Homework5_Task3 {
     static int[] getArray1(Integer size) {
         if (size == null)
             return null;
-
+        
         int[] arr1 = new int[size];
         for (int a = 0; a < size; a++) {
             arr1[a] = (int) (Math.random() * 20) - 10;
@@ -35,7 +35,6 @@ public class Homework5_Task3 {
 
     static int[] getArray2(int[] arr1) {
         int size = arr1.length;
-
         int[] arr2 = new int[size];
         for (int a = 0; a < size; a++) {
             arr2[a] = (int) (Math.random() * 20) - 10;
@@ -55,6 +54,7 @@ public class Homework5_Task3 {
 
     static void printArray(int[] arr1, int[] arr2, int[] oddArr) {
         System.out.println("Your first array is:\n" + Arrays.toString(arr1) +
-                "\nYour second array is:\n" + Arrays.toString(arr2) + "\nOdd array You've got:\n" + Arrays.toString(oddArr));
+                           "\nYour second array is:\n" + Arrays.toString(arr2) +
+                           "\nOdd array You've got:\n" + Arrays.toString(oddArr));
     }
 }
