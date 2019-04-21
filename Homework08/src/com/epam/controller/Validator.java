@@ -9,10 +9,10 @@ public class Validator {
     }
 
     public void verifyYear(int year) throws Exception {
-//        if (year < 1700 || year > Year.now().getValue()) {
+        if (year < 1700 || year > books.length) {
             throw new Exception(" Incorrect input of the year ");
         }
-//    }
+    }
     public void verifyStringInput(String string) throws Exception{
         if(string == null){
             throw new Exception(" The string couldn't be empty ");
