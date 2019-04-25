@@ -1,6 +1,6 @@
 package com.epam.controller;
 
-public class Validator {
+public class Verify {
 
     public void verifyArrayLength(int length) {
         if (length <= 0) {
@@ -13,7 +13,7 @@ public class Validator {
             throw new Exception(" Incorrect input of the year ");
         }
     }
-    public void verifyStringInput(String string) throws Exception{
+    public void verifyString(String string) throws Exception{
         if(string == null){
             throw new Exception(" The string couldn't be empty ");
         }
