@@ -2,7 +2,7 @@ package com.epam.controller;
 
 public class Verify {
 
-    public void verifyArrayLength(int length) {
+    public void verifyArrLenght(int length) {
         if (length <= 0) {
             throw new IllegalArgumentException(" The length has to be more then 0 ");
         }
