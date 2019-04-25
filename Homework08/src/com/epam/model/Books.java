@@ -14,7 +14,7 @@ public class Books {
 
     public Books(int length) {
         try {
-            verify.verifyArrayLength(length);
+            verify.verifyArrLenght(length);
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
