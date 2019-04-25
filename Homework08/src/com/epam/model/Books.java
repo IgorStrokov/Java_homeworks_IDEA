@@ -1,6 +1,6 @@
 package com.epam.model;
 
-import com.epam.controller.Validator;
+import com.epam.controller.Verify;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -10,11 +10,11 @@ public class Books {
     private Book [] books;
     private int count=0;
 
-    Validator validator = new Validator();
+    Verify verify = new Verify();
 
     public Books(int length) {
         try {
-            validator.verifyArrayLength(length);
+            verify.verifyArrayLength(length);
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
@@ -46,7 +46,7 @@ public class Books {
 
     public Books findByAuthor(String author){
         try{
-            validator.verifyStringInput(author);
+            verify.verifyString(author);
         } catch (Exception e){
             System.out.println(e.getMessage());
         }
@@ -61,7 +61,7 @@ public class Books {
 
     public Books findByYear(int year) {
         try {
-            validator.verifyYear(year);
+            verify.verifyYear(year);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
