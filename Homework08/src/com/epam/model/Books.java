@@ -102,8 +102,8 @@ public class Books {
         Book[] newBooks = Arrays.copyOf(books, count);
         Arrays.sort(newBooks, new Comparator<Book>(){
             @Override
-            public int compare(Book o1, Book o2) {
-                return (int)(o2.getCost() - o1.getCost());
+            public int compare(Book b1, Book 22) {
+                return (int)(b2.getCost() - b1.getCost());
             }
         });
 
